@@ -5,16 +5,17 @@
 
 body {
   font-family: sans-serif;
+  color: #444;
 }
 
 #container {
-  width: 760px;
+  width: 650px;
   border-top: 14px solid #395756;
   margin-left: auto;
   margin-right: auto;
 }
 main {
-  width: 550px;
+  width: 480px;
   float: left;
   position: relative;
 }
@@ -24,12 +25,15 @@ header {
 }
 header h1 {
   float: left;
+  padding: 14px 0;
+  color: #222;
 }
+
 header nav {
   float: right;
-  padding: 12px;
+  padding: 24px;
 }
-header .clear {
+.clear {
   clear: both;
 }
 
@@ -50,10 +54,9 @@ header nav ul li {
 
 /* LVHA */
 header nav ul li a:link,
-a:active,
-.related-posts a:link {
+a:active {
   text-decoration: none;
-  color: #efeded;
+  color: #fff;
 }
 header nav ul li a:hover,
 a:visited {
@@ -62,18 +65,33 @@ a:visited {
 }
 
 aside {
-  width: 200px;
+  width: 150px;
   float: right;
-  background-color: grey;
+  background-color: rgb(234, 232, 232);
 }
-
+aside section article {
+  margin-bottom: 2px;
+}
+aside section article:last-child {
+  margin-bottom: 0;
+}
 aside h4 {
   background-color: #a67db8;
   text-align: center;
   color: #fff;
+  padding: 12px 0;
 }
 aside img {
   width: 50px;
+  float: left;
+}
+aside a:link {
+  font-size: 12px;
+  float: left;
+  padding-top: 18px;
+  margin-left: 12px;
+  color: #000;
+  text-decoration: none;
 }
 footer {
   border-bottom: 14px solid #395756;
@@ -95,8 +113,7 @@ footer {
 .big-img {
   width: 100%;
   height: 200px;
-  margin-bottom: 24px;
-  /* display: block; */
+  margin: 24px 0;
 }
 
 h2 {
@@ -108,7 +125,7 @@ p {
 
 .html-lists li {
   margin-bottom: 6px;
-  margin-left: 16px;
+  margin-left: 36px;
 }
 
 .html-lists li:last-child {
@@ -120,23 +137,28 @@ p {
   bottom: 0px;
   right: -100px;
   background-color: #fff;
-  padding: 12px 20px;
+  padding: 8px 12px;
   border: none;
 }
 
 .like:hover {
-  background-color: salmon;
+  background-color: yellow;
 }
-
+.like::first-letter {
+  color: red;
+  font-size: 18px;
+  padding: 2px;
+}
 main h1 {
   margin-bottom: 18px;
+  text-transform: uppercase;
 }
 main h1::after {
   content: "TOP";
   background-color: yellow;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 600;
-  top: -10px;
-  right: -10px;
+  top: -12px;
+  right: -6px;
   position: absolute;
 }
