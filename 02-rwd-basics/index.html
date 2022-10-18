@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    html {
+      font-size: 62.5%;
+    }
+    p {
+      font-size: 3rem;
+    }
+    h1 {
+      font-size: 6rem;
+    }
+    .container {
+      max-width: 1500px;
+      /* height: 200px; */
+      border: 1px black solid;
+      background-color: tan;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .hero-image {
+      align-self: center;
+      justify-self: center;
+    }
+    .hero-image img {
+      width: 80%;
+      height: 80%;
+    }
+    @media screen and (max-width: 768px) {
+      html {
+        font-size: 50%;
+      }
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <section class="hero-text">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+          minima itaque magni totam amet, culpa reiciendis facilis neque
+          laboriosam, nesciunt officiis error? Alias quaerat laborum, expedita
+          numquam dignissimos ex illo.
+        </p>
+      </section>
+      <section class="hero-image">
+        <img src="demo.jpg" alt="" />
+      </section>
+    </div>
+  </body>
+</html>
