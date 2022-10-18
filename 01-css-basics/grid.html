@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="el el--1">HTML</div>
+      <div class="el el--2">and</div>
+      <div class="el el--3">CSS</div>
+      <div class="el el--4">are</div>
+      <div class="el el--5">amazing</div>
+      <div class="el el--6">languages</div>
+      <div class="el el--7">to</div>
+    </div>
+
+    <style>
+      .container {
+        margin: 0 auto;
+        width: 300px;
+        background-color: #000;
+        display: grid;
+        /* grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 100px 100px;
+        gap: 10px;
+        align-items: center;
+        justify-items: center; */
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .el--1 {
+        background-color: red;
+        /* align-self: start; */
+      }
+      .el--2 {
+        background-color: green;
+        /* justify-self: end; */
+      }
+      .el--3 {
+        background-color: blue;
+      }
+      .el--4 {
+        background-color: yellow;
+        height: 50px;
+      }
+      .el--5 {
+        background-color: orangered;
+        grid-row: 1 / span 2;
+        grid-column: 3 / span 2;
+      }
+      .el--6 {
+        background-color: grey;
+        grid-row: 1/ 2;
+        grid-column: 2/3;
+      }
+      .el--7 {
+        background-color: yellowgreen;
+      }
+      .el--8 {
+        background-color: gold;
+      }
+    </style>
+  </body>
+</html>
+
+<!-- BEM Model -->
