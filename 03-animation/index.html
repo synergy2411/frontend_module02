@@ -9,42 +9,104 @@
       .container {
         width: 600px;
         height: 600px;
-        background-color: grey;
+        /* background-color: grey; */
+        margin: 50px auto;
+        position: relative;
+        box-shadow: 0 0 50px 0.1px;
       }
       .box {
         width: 100px;
         height: 100px;
+        position: absolute;
         background-color: red;
-        animation-name: move;
+        /* animation: move 3s cubic-bezier(0.69, 0.04, 0.31, 1) forwards,
+          expand 1s 4s linear forwards; */
+        /* animation: expand 1s linear forwards; */
+        /* animation-name: move;
         animation-duration: 5s;
         animation-delay: 0.5s;
         animation-timing-function: cubic-bezier(0.69, 0.04, 0.31, 1);
-        animation-fill-mode: forwards;
+        animation-fill-mode: backwards;
+        animation-iteration-count: 1;
+        animation-direction: alternate; */
       }
 
+      @keyframes expand {
+        from {
+          /* transform: scale(100%); */
+        }
+        to {
+          transform: scale(200%);
+        }
+      }
       @keyframes move {
         0% {
+          top: 0;
+          left: 0;
           background-color: green;
         }
         25% {
           background-color: gold;
           border-radius: 20%;
-          transform: translate(500px, 0);
+          /* transform: translate(500px, 0); */
+          top: 0;
+          left: 500px;
         }
         50% {
-          background-color: teal;
+          background-color: tan;
           border-radius: 30%;
-          transform: translate(500px, 500px);
+          /* transform: translate(500px, 500px); */
+          top: 500px;
+          left: 500px;
         }
-        100% {
+        75% {
+          background-color: blue;
+          border-radius: 40%;
+          /* transform: translate(0, 500px); */
+          top: 500px;
+          left: 0;
+        }
+        90% {
           background-color: yellow;
           transform: translate(0, 0);
+          border-radius: 50%;
+          left: 0;
+          top: 0;
         }
+        100% {
+          left: 250px;
+          top: 250px;
+          /* transform: scale(200%); */
+        }
+      }
+      .container svg {
+        box-shadow: 0 0 30px 0.5px;
+        position: absolute;
+        top: 300px;
+        left: 0;
+        transform: translate(-50%, -50%);
+        width: 24px;
+        color: red;
+        border-radius: 50%;
       }
     </style>
   </head>
   <body>
     <div class="container">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 19.5L8.25 12l7.5-7.5"
+        />
+      </svg>
       <div class="box"></div>
       <!-- <img src="https://picsum.photos/100" alt="" /> -->
     </div>
