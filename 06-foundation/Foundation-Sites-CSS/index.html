@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <style>
+      .cntr {
+        width: 600px;
+        /* background-color: grey; */
+        box-shadow: 0 0 20px 0.15px;
+      }
+      .box {
+        box-shadow: 0 0 10px 0.5px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <ul class="tabs" data-tabs="tab-group" id="example-tabs" role="tablist">
+      <li class="tabs-title is-active" role="presentation"><a href="#panel1" aria-selected="true" role="tab" aria-controls="panel1" id="panel1-label" tabindex="0">About</a></li>
+      <li class="tabs-title" role="presentation"><a href="#panel2" role="tab" aria-controls="panel2" aria-selected="false" id="panel2-label" tabindex="-1">Contact</a></li>
+    </ul>
+    <div class="tabs-content" data-tabs-content="example-tabs">
+      <div class="tabs-panel is-active" id="panel1" role="tabpanel" aria-labelledby="panel1-label">
+        About Link
+      </div>
+      <div class="tabs-panel" id="panel2" role="tabpanel" aria-labelledby="panel2-label" aria-hidden="true">
+        Contact Link
+      </div>
+    </div>
+
+    <div class="switch">
+      <input class="switch-input" id="exampleSwitch" type="checkbox" name="exampleSwitch" />
+      <label class="switch-paddle" for="exampleSwitch">
+        <span class="show-for-sr">Text</span>
+      </label>
+    </div>
+
+    <hr>
+
+    <div class="slider" data-slider data-initial-start="" data-end="">
+      <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+      <span class="slider-fill" data-slider-fill></span>
+      <input type="hidden">
+    </div>
+<!-- 
+    <ul class="accordion" data-accordion>
+      <li class="accordion-item is-active" data-accordion-item>
+        <a href="#sec" class="accordion-title">Content</a>
+        <div id="sec" class="accordion-content" data-tab-content>
+          Accorian Content
+        </div>
+      </li>
+    </ul> -->
+
+    <!-- <ul class="pagination" role="navigation" aria-label="Pagination">
+      <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
+      <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+      <li><a href="#" aria-label="Page 2">2</a></li>
+      <li class="ellipsis" aria-hidden="true"></li>
+      <li><a href="#" aria-label="Page 12">12</a></li>
+      <li><a href="#" aria-label="Page 13">13</a></li>
+      <li class="pagination-next disabled"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+    </ul> -->
+
+
+
+
+    <!-- <div class="cntr">xyz</div> -->
+
+    <!-- <h1>Heading 1</h1>
+
+    <a href="#" class="button primary">Primary</a>
+    <a href="#" class="button secondary">Secondary</a>
+    <a href="#" class="button alert">Alert</a>
+    <a href="#" class="button warning">Warning</a>
+    <br> -->
+    <!-- <button class="button">Normal</button> -->
+
+
+    <!-- <div class="cntr">
+      <div class="grid-x grid-margin-x">
+        <div class="cell box small-6 medium-4 large-3">One</div>
+        <div class="cell box small-6 medium-4 large-3">two</div>
+        <div class="cell box small-6 medium-4 large-3">three</div>
+        <div class="cell box small-6 medium-4 large-3">four</div>
+      </div>
+    </div> -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

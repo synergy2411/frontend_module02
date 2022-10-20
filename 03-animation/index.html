@@ -19,8 +19,8 @@
         height: 100px;
         position: absolute;
         background-color: red;
-        /* animation: move 3s cubic-bezier(0.69, 0.04, 0.31, 1) forwards,
-          expand 1s 4s linear forwards; */
+        animation: move 3s cubic-bezier(0.69, 0.04, 0.31, 1) forwards,
+          expand 1s 4s linear forwards;
         /* animation: expand 1s linear forwards; */
         /* animation-name: move;
         animation-duration: 5s;
@@ -109,6 +109,30 @@
       </svg>
       <div class="box"></div>
       <!-- <img src="https://picsum.photos/100" alt="" /> -->
+
+      <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCJUjwCAcyEfSF8yYPEUjgDlbVy9ATXVEA",
+          authDomain: "deloitte-proj.firebaseapp.com",
+          projectId: "deloitte-proj",
+          storageBucket: "deloitte-proj.appspot.com",
+          messagingSenderId: "778653649859",
+          appId: "1:778653649859:web:6e21fe371a71af4dbe0b76",
+          measurementId: "G-92L5VHT9D6"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
     </div>
   </body>
 </html>
