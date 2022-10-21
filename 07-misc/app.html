@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // JavaSCript Object
+      var user = {
+        firstName: 'Foo',
+        lastName: 'Bar',
+        age: 32,
+        isAdmin: true,
+        address: {
+          city: 'Bengaluru',
+          street: '201 Main Road, Marathahalli',
+        },
+        friends: ['Baz', 'Bam'],
+        doj: new Date('Jan 12, 2023'),
+      };
+
+      console.log("USER ", user)
+
+      var stringifiedUser = JSON.stringify(user);
+      console.log('Stringified Age : ', stringifiedUser.age);
+
+      const roundTrip = JSON.parse(stringifiedUser);
+      console.log('Round Trip Age : ', roundTrip.age);
+
+      console.log( roundTrip);
+
+      console.log( stringifiedUser);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,270 @@
+/* primary : #7048e8 */
+/* secondary :  #f3f0ff*/
+/* third : #5f3dc4 */
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: rgba(244, 244, 244, 0.614);
+  position: relative;
+}
+
+.search-container {
+  height: 10rem;
+  position: fixed;
+  top: 2%;
+  left: 5%;
+}
+
+.search-container .icon {
+  position: absolute;
+  margin: 2.4rem 1rem;
+  cursor: pointer;
+}
+.search-container .icon-moon {
+  right: 19rem;
+  top: 0;
+}
+.search-container .icon-bell {
+  right: 7rem;
+  top: 0;
+}
+.bell {
+  position: relative;
+}
+.notification {
+  position: absolute;
+  background-color: red;
+  width: 12rem;
+}
+.search-container .icon-grid {
+  right: 13rem;
+  top: 0;
+}
+.search-container .icon-list {
+  left: 1rem;
+  top: 0;
+}
+.search-container .icon-search {
+  left: 6rem;
+  top: 0;
+}
+
+.search-container svg {
+  color: #444;
+  width: 4rem;
+  height: 4rem;
+}
+
+.search-container .rounded-div {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  /* background-color: grey; */
+  top: 0;
+}
+.search-container .flag {
+  right: 25rem;
+  background: url('https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png')
+    no-repeat 0 0;
+  background-size: cover;
+}
+
+.search-container .ui-face {
+  right: 1rem;
+  background: url('/practice_exercises/solutions/Foundation-Sites-CSS/images/97.jpg')
+    no-repeat 0 0;
+  background-size: cover;
+}
+
+.searchbar {
+  height: 100%;
+  font-size: 3rem;
+  padding: 5%;
+  padding-left: 20%;
+}
+
+.my-container {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 0.2rem 0.002px;
+  border-radius: 1rem;
+}
+.content-container {
+  margin-top: 30%;
+}
+
+h1 {
+  font-size: 4.8rem;
+  padding: 6rem 4rem;
+  line-height: 1;
+}
+p {
+  font-size: 2.8rem;
+  padding: 0 3rem;
+}
+
+.switch-container {
+  display: flex;
+  padding: 12rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+span {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.icon-container {
+  padding: 5rem;
+  border-radius: 50%;
+  margin: 6rem auto;
+  background-color: #f3f0ff;
+  display: block;
+}
+.icon-container svg {
+  width: 6rem;
+  border-radius: 50%;
+  color: #7048e8;
+  margin: 0 auto;
+  background-color: #f3f0ff;
+}
+
+.card-section {
+  /* background-color: grey; */
+  text-align: center;
+}
+
+.plan h2 {
+  font-size: 4rem;
+}
+.plan p {
+  padding-bottom: 1rem;
+}
+.card-section .plan-amount {
+  font-size: 4rem;
+  color: #5f3dc4;
+}
+.card-section .plan-amount-text {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #444;
+}
+
+.plan-features {
+  font-size: 2.8rem;
+  text-align: left;
+  padding-left: 6rem;
+  list-style: none;
+}
+
+.plan-features li {
+  line-height: 6rem;
+  display: inline;
+}
+
+.plan-features svg {
+  width: 3rem;
+  color: #5f3dc4;
+}
+
+.btn {
+  display: block;
+  font-size: 2.8rem;
+  padding: 2rem 4rem;
+  text-align: center;
+  border-radius: 2rem;
+  margin: 4rem 0;
+}
+.btn--current {
+  background-color: #d3f9d8;
+  color: #66a80f;
+}
+
+.btn--pro {
+  background-color: #7048e8;
+  color: #fff;
+}
+.card {
+  margin-bottom: 8rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  border: 1px rgb(206, 206, 206) solid;
+}
+.card--upgrade {
+  border: 1px solid #7048e8;
+  position: relative;
+}
+
+.card--upgrade .plan-popular {
+  background-color: #f3f0ff;
+  text-transform: uppercase;
+  right: 4rem;
+  top: 4rem;
+  position: absolute;
+  color: #7048e8;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.btn--enterprise {
+  background-color: #f3f0ff;
+  color: #5f3dc4;
+}
+
+.faq-container {
+  background-color: rgba(240, 238, 238, 0.905);
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.faq-container h2 {
+  font-size: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+footer {
+  border-bottom: 1rem solid #5f3dc4;
+  text-align: center;
+  padding: 2rem 0;
+}
+footer h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+footer .like {
+  color: red;
+  font-size: 2.8rem;
+}
+
+.buton-cta {
+  background-color: #f03e3e;
+  box-shadow: 0 0 2rem red;
+  padding: 1rem 3rem;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 1rem;
+  position: fixed;
+  display: block;
+  right: 10%;
+  bottom: 10%;
+}
+
+@media screen and (min-width: 0) {
+  html {
+    font-size: 38.5%;
+  }
+}
+@media screen and (min-width: 640px) {
+}
+@media screen and (min-width: 1040px) {
+}

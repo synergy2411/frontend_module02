@@ -1,0 +1,24 @@
+[
+  {
+    "email": "test@test.com",
+    "username": "foo bar",
+    "age": 32,
+    "friends": ["Baz", "Bam"],
+    "address": {
+      "city": "Pune",
+      "street": "201 Main Road, Wakad"
+    },
+    "doj": "Jan 01, 2023"
+  },
+  {
+    "email": "test1@test.com",
+    "username": "John Doe",
+    "age": 32,
+    "friends": ["Baz", "Bam"],
+    "address": {
+      "city": "Pune",
+      "street": "201 Main Road, Wakad"
+    },
+    "doj": "Jan 01, 2023"
+  }
+]
